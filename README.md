@@ -374,7 +374,7 @@ void main()
     int     result = 0;
 
     vec_from(&t1, base, 5, sizeof(int));
-    vec_reduce(&result, &t1, reduce_tester);
+    vec_reduce(&result, &t1, sum);
     assert(result == 15);
     vec_free(&t1);
 }
